@@ -1,0 +1,1 @@
+/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/debug/libmath_universe_shinen.rlib: /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/package/math_universe_shinen-0.1.0/src/lib.rs /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/package/math_universe_shinen-0.1.0/src/multivector.rs

@@ -1,0 +1,1 @@
+/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/debug/libmath_universe_sokudo.rlib: /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/package/math_universe_sokudo-0.1.0/src/lib.rs /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/package/math_universe_sokudo-0.1.0/src/process.rs

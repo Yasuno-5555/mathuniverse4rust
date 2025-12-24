@@ -15,7 +15,7 @@ math_universe_ryoshi = { path = "crates/ryoshi" }
 
 [features]
 default = []
-python = ["pyo3", "dep:pyo3"]
+python = ["dep:pyo3"]
 
 [lib]
 name = "mathuniverse_rs"

@@ -1,0 +1,14 @@
+/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/deps/serde-e702e8a57a9da0f2.d: /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/build/serde-ef74394825afd6be/out/private.rs
+
+/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/deps/libserde-e702e8a57a9da0f2.rlib: /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/build/serde-ef74394825afd6be/out/private.rs
+
+/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/deps/libserde-e702e8a57a9da0f2.rmeta: /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/build/serde-ef74394825afd6be/out/private.rs
+
+/home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/yasuno/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/build/serde-ef74394825afd6be/out/private.rs:
+
+# env-dep:OUT_DIR=/home/yasuno/デスクトップ/Projects/mathuniverse4rust/Rust/target/release/build/serde-ef74394825afd6be/out
