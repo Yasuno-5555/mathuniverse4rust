@@ -1,0 +1,11 @@
+[package]
+name = "math_universe_zigen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-traits = { workspace = true }
+pyo3 = { workspace = true, optional = true }
+
+[features]
+python = ["dep:pyo3"]

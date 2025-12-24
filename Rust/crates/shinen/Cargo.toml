@@ -1,0 +1,20 @@
+[package]
+name = "math_universe_shinen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-traits = { workspace = true }
+pyo3 = { workspace = true, optional = true }
+rayon = { workspace = true }
+
+[dev-dependencies]
+criterion = "0.5"
+rand = { workspace = true }
+
+[features]
+python = ["dep:pyo3"]
+
+[[bench]]
+name = "shinen_bench"
+harness = false

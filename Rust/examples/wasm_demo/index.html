@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MathUniverse Wasm Demo</title>
+</head>
+<body>
+    <h1>MathUniverse Wasm Demo</h1>
+    <h2>Dual Numbers (Auto-Diff)</h2>
+    <div id="dual-output"></div>
+    
+    <h2>Quantum Simulation (Bell State)</h2>
+    <div id="quantum-output"></div>
+
+    <script type="module">
+        import init, { setup, WasmDual, WasmQuantumState } from '../../crates/math_universe_wasm/pkg/math_universe_wasm.js';
+
+        async function run() {
+            await init();
+            setup();
+            
+            // 1. Zigen Demo
+            // f(x) = x * sin(x) at x=2.0
+            // f'(x) = sin(x) + x*cos(x)
+            const x = new WasmDual(2.0, 1.0); // x=2, x'=1
+            const sin_x = x.sin();
+            const res = x.mul(sin_x);
+            
+            document.getElementById("dual-output").innerHTML = `
+                <p>Function: f(x) = x * sin(x) at x=2.0</p>
+                <p>Value: ${res.real().toFixed(4)}</p>
+                <p>Derivative: ${res.dual().toFixed(4)}</p>
+            `;
+            
+            // 2. Ryoshi Demo (Bell State)
+            // |00> -> H -> (|00>+|10>) -> CNOT(0->1) -> (|00>+|11>)
+            const qs = new WasmQuantumState(2);
+            qs.apply_h(0);
+            qs.apply_cnot(0, 1);
+            
+            const p0 = qs.get_probability(0);
+            const p1 = qs.get_probability(1);
+            
+            document.getElementById("quantum-output").innerHTML = `
+                <p>Circuit: H(0) -> CNOT(0, 1) (Bell State)</p>
+                <p>P(|1> at qubit 0): ${p0.toFixed(4)} (Expected ~0.5)</p>
+                <p>P(|1> at qubit 1): ${p1.toFixed(4)} (Expected ~0.5)</p>
+            `;
+        }
+        
+        run();
+    </script>
+</body>
+</html>

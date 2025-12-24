@@ -1,0 +1,42 @@
+[package]
+name = "math_universe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"], optional = true }
+# Re-export internal crates
+math_universe_zigen = { path = "crates/zigen" }
+math_universe_shinen = { path = "crates/shinen" }
+math_universe_risan = { path = "crates/risan" }
+math_universe_sokudo = { path = "crates/sokudo" }
+math_universe_keirin = { path = "crates/keirin" }
+math_universe_ryoshi = { path = "crates/ryoshi" }
+
+[features]
+default = []
+python = ["pyo3", "dep:pyo3"]
+
+[lib]
+name = "mathuniverse_rs"
+crate-type = ["cdylib", "rlib"]
+
+[workspace]
+resolver = "2"
+members = [
+    "crates/zigen",
+    "crates/shinen",
+    "crates/risan",
+    "crates/sokudo",
+    "crates/keirin",
+    "crates/ryoshi",
+    "crates/math_universe_wasm",
+]
+
+[workspace.dependencies]
+num-traits = "0.2"
+num-complex = "0.4"
+rand = "0.8"
+pyo3 = { version = "0.20", features = ["extension-module"] }
+rayon = "1.8"
+wasm-bindgen = "0.2"

@@ -1,0 +1,12 @@
+[package]
+name = "math_universe_ryoshi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-complex = { workspace = true }
+num-traits = { workspace = true }
+pyo3 = { workspace = true, optional = true }
+
+[features]
+python = ["dep:pyo3"]
